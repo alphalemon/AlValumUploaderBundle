@@ -1,0 +1,55 @@
+{#
+   This file is part of the AlphaLemonValumUploaderBundle and it is distributed
+   under the MIT License. In addiction, to use this bundle, you must leave
+   intact this copyright notice.
+ 
+    (c) Since 2011 AlphaLemon
+ 
+   For the full copyright and license information, please view the LICENSE
+   file that was distributed with this source code.
+ 
+   For extra documentation and help please visit http://alphalemon.com
+  
+   @license    MIT License
+#}
+
+{% javascripts '@AlValumUploaderBundle/Resources/public/js/*' filter='yui_js' %}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+{% stylesheets '@AlValumUploaderBundle/Resources/public/css/*' filter='yui_css' %}
+<link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}" />
+{% endstylesheets %}
+
+
+{% if options.panel_title is defined %}
+<h1>{{ options.panel_title }}</h1>
+{% endif %}
+
+{% if options.panel_info is defined %}
+<p>{{ options.panel_info }}</p>
+{% endif %}
+
+
+<div id="{{ options.id }}">{{ options.upload_action }}</div>
+<script>
+  var uploader = new qq.FileUploader({ 
+        element: document.getElementById('{{ options.id }}'),
+        action: '{{ options.upload_action }}',
+        params: { {% if options.params is defined and options.params != "" %}{{options.params|raw}}{% endif %} },
+        allowedExtensions: [{{ options.allowed_extensions|raw }}],
+        sizeLimit: {{ options.size_limit }},
+        minSizeLimit: {{ options.min_size_limit }},
+        {% if options.onSubmit is defined and options.onSubmit != "" %}
+        onSubmit: function(id, fileName){ {{ options.onSubmit|raw }} },
+        {% endif %}
+        {% if options.onProgress is defined and options.onProgress != "" %}
+        onProgress: function(id, fileName, loaded, total){ {{ options.onProgress|raw }} },
+        {% endif %}
+        {% if options.onComplete is defined and options.onComplete != "" %}
+        onComplete: function(id, fileName, responseJSON){ {{ options.onComplete|raw }} },
+        {% endif %}
+        {% if options.onCancel is defined and options.onCancel != "" %}
+        onCancel: function(id, fileName){ {{ options.onCancel|raw }} },
+        {% endif %}});
+</script>

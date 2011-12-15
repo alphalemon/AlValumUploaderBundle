@@ -1,0 +1,3 @@
+AlValumUploaderBundle_homepage:
+    pattern:  /al_valumUploader
+    defaults: { _controller: AlValumUploaderBundle:ValumUploader:show }

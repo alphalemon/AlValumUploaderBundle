@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="valum.panel_title">Files Uploader</parameter>
+        <parameter key="valum.panel_info">To upload a file, click on the button below or drag your files over the button itself. Drag-and-drop is supported in Firefox and Chrome.</parameter>
+        <parameter key="valum.id">al_valum_uploader</parameter>
+        <parameter key="valum.upload_action">al_uploadFile</parameter>
+        <parameter key="valum.allowed_extensions">'jpg','jpeg','png','gif','bmp'</parameter>
+        <parameter key="valum.size_limit">2500000</parameter>
+        <parameter key="valum.min_size_limit">0</parameter>
+        <parameter key="valum.params" type="collection">
+            <parameter key="folder"></parameter>
+        </parameter>
+        <parameter key="valum.onSubmit"></parameter>
+        <parameter key="valum.onProgress"></parameter>
+        <parameter key="valum.onComplete"></parameter>
+        <parameter key="valum.onCancel"></parameter>
+
+        <parameter key="valum.base_folder">%kernel.root_dir%/../</parameter>
+    </parameters>
+</container>
