@@ -1,0 +1,22 @@
+{
+  "name": "alphalemon/al-valum-uploader-bundle",
+  "description": "AlValumUploaderBundle adds upload capabilities to any symfony project. This bundle encapsulates the valum uploader javascript tool",
+  "keywords": ["upload", "javascript", "cms"],
+  "homepage": "http://alphalemon.com",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "AlphaLemon",
+      "email": "info@alphalemon.com"
+    }
+  ],
+  "require": {
+      "php":              ">=5.3.2",
+      "symfony/symfony":  ">=2.0.9,<2.1.0-dev",
+  },
+  "autoload": {
+    "psr-0": { "AlValumUploaderCore": "vendor/bundles/AlphaLemon/AlValumUploaderBundle/src" }
+  },
+  "target-dir": "AlphaLemon/AlValumUploaderBundle"
+}
