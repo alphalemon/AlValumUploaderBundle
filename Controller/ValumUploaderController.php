@@ -20,8 +20,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-use AlValumUploaderCore\Uploader\qqFileUploader;
-use AlValumUploaderCore\Options\AlValumUploaderOptionsBuilder;
+use AlphaLemon\AlValumUploaderBundle\Core\Uploader\qqFileUploader;
+use AlphaLemon\AlValumUploaderBundle\Core\Options\AlValumUploaderOptionsBuilder;
 
 
 class ValumUploaderController extends Controller

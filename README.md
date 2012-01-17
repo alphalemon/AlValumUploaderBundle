@@ -25,7 +25,6 @@ Register the AlValumUploaderBundle namespaces in `app/autoload.php`:
     $loader->registerNamespaces(array(
         ...
         'AlphaLemon'                     => __DIR__.'/../vendor/bundles',
-        'AlValumUploaderCore'            => __DIR__.'/../vendor/bundles/AlphaLemon/AlValumUploaderBundle/src',
     ));
 
 ## Configure the assets compressor

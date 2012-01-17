@@ -1,6 +1,6 @@
 <?php
 
-namespace AlValumUploaderCore\Uploader;
+namespace AlphaLemon\AlValumUploaderBundle\Core\Uploader;
 
 /**
  * Handle file uploads via XMLHttpRequest

@@ -14,9 +14,9 @@
  * @license    MIT License
  */
 
-namespace AlValumUploaderCore\Options;
+namespace AlphaLemon\AlValumUploaderBundle\Core\Options;
 
-use AlValumUploaderCore\Options\AlOptionsBuilder;
+use AlphaLemon\AlValumUploaderBundle\Core\Options\AlOptionsBuilder;
 
 /**
  * Description of AlValumUploaderOptionsBuilder

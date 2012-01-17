@@ -14,7 +14,7 @@
  * @license    MIT License
  */
 
-namespace AlValumUploaderCore\Options;
+namespace AlphaLemon\AlValumUploaderBundle\Core\Options;
 
 use Symfony\Component\HttpFoundation\Request;
 
