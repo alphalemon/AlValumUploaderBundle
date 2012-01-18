@@ -1,7 +1,7 @@
 #AlValumUploadeBundle
 The AlValumUploadeBundle encapsulates the ajax valum uploader javascript to manage the files uploading through a simple ajax interface.
 
-## Get the PageTreeBundle
+## Get the AlValumUploadeBundle
 Clone this bundle in the vendor/bundles/AlphaLemon directory:
 
     git clone git://github.com/alphalemon/AlValumUploaderBundle.git vendor/bundles/AlphaLemon/AlValumUploaderBundle
