@@ -13,14 +13,13 @@
    @license    MIT License
 #}
 
-{% javascripts 'bundles/alvalumuploader/js/*' filter='yui_js' %}
-<script src="{{ asset_url }}"></script>
-{% endjavascripts %}
+{% block external_javascripts %}
+    <script src="{{ asset('bundles/alvalumuploader/js/fileuploader.js') }}"></script>
+{% endblock %}
 
-{% stylesheets 'bundles/alvalumuploader/css/*' filter='yui_css' %}
-<link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}" />
-{% endstylesheets %}
-
+{% block external_stylesheets %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/alvalumuploader/js/fileuploader.js') }}" />
+{% endblock %}
 
 {% if options.panel_title is defined %}
 <h1>{{ options.panel_title }}</h1>
