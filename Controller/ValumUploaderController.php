@@ -52,9 +52,9 @@ class ValumUploaderController extends Controller
         {
             $response = new Response();
             $response->setStatusCode('404');
-            return $this->render('AlphaLemonCmsBundle:Pages:ajax_error.html.twig', array('message' => $translator->trans('The folder %folder% does not exists. Check your valum\'s configuration file', array('folder' => $folder))), $response);
-
-            //throw new InvalidArgumentException($translator->trans('The folder %folder% does not exists. Check your valum\'s configuration file', array('folder' => $folder)));
+            $response->setContent($translator->trans('The folder %folder% does not exists. Check your valum\'s configuration file', array('folder' => $folder)));
+            
+            return $response;
         }
 
         $uploader = new qqFileUploader($allowedExtensions, $sizeLimit);

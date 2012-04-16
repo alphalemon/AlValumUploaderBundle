@@ -1,0 +1,7 @@
+{
+    "bundles" : {
+        "AlphaLemon\\AlValumUploaderBundle\\AlValumUploaderBundle" : {
+            "environments" : "all"
+        }
+    }
+}
