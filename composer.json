@@ -26,5 +26,6 @@
   "autoload": {
     "psr-0": { "AlphaLemon\\AlValumUploaderBundle": "" }
   },
+  "minimum-stability": "dev",
   "target-dir" : "AlphaLemon/AlValumUploaderBundle"
 }
